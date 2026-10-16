@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EasyTicket</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎟️ EasyTicket</h1>
+        <p class="subtitle">Simple Online Ticket Booking</p>
+
+        <form id="bookingForm">
+
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="event">Select Event</label>
+            <select id="event" required>
+                <option value="Music Show">Music Show</option>
+                <option value="IT Workshop">IT Workshop</option>
+                <option value="Movie Night">Movie Night</option>
+            </select>
+
+            <label for="tickets">Number of Tickets</label>
+            <input
+                type="number"
+                id="tickets"
+                min="1"
+                max="10"
+                value="1"
+                required
+            >
+
+            <button type="submit">Book Ticket</button>
+
+        </form>
+
+        <div id="message" role="status"></div>
+
+    </div>
+
+</body>
+</html>
